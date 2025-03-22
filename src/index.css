@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +10,50 @@
   }
 }
 
-input, textarea {
+input,
+textarea {
   @apply bg-transparent;
+}
+
+.title-section {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title {
+  font-size: 8rem;
+  line-height: 0.8;
+  font-weight: bolder;
+  color: #780C0C;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  line-height: 0.8;
+  font-weight: bolder;
+  color: #780C0C;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 780px) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .sub-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .sub-title {
+    font-size: 1.1rem;
+  }
 }

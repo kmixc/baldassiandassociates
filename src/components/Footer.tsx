@@ -20,12 +20,10 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      
+
       <div className="max-w-4xl mx-auto mt-8 pt-8 border-t border-gray-200">
         <div className="flex justify-center space-x-6 text-sm text-gray-500">
-          <a href="#" className="hover:text-gray-700">FACEBOOK</a>
-          <a href="#" className="hover:text-gray-700">LINKEDIN</a>
-          <a href="#" className="hover:text-gray-700">INSTAGRAM</a>
+          <a href="https://www.instagram.com/baldassibaldassi/" className="hover:text-gray-700">INSTAGRAM</a>
         </div>
       </div>
     </footer>
