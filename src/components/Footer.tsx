@@ -7,15 +7,16 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-serif mb-2">Baldassi & Associates</h3>
           <p className="text-sm text-gray-600">
-            A boutique law firm providing legal solutions to<br />
-            individuals and businesses in need of<br />
-            experienced legal and strategic expertise.
+            A criminal law firm dedicated to strong, fearless, effective advocacy.
           </p>
         </div>
         <div className="text-right">
           <h3 className="text-xl font-serif mb-2">Josephine Baldassi</h3>
           <p className="text-sm text-gray-600">
-            Tel: (555) 444-3333<br />
+            M: 1 (647) 302-8232<br />
+            O: 1 (416) 977-7100<br />
+            EFax: 1 (437) 222-3500<br />
+            Toll Free: 1 (877) 444-3434<br />
             Email: josephine@jbassociates.com
           </p>
         </div>

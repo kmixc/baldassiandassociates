@@ -24,7 +24,7 @@ const ContactForm = () => {
 
   const validateForm = () => {
     const newErrors: Partial<FormData> = {};
-    
+
     if (!formData.firstName.trim()) {
       newErrors.firstName = 'First name is required';
     }
@@ -61,7 +61,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -84,7 +84,7 @@ const ContactForm = () => {
         templateParams,
         'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
       );
-      
+
       setFormData({
         firstName: '',
         lastName: '',
@@ -104,11 +104,7 @@ const ContactForm = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <h2 className="text-3xl font-serif mb-8 text-gray-900">Contact</h2>
-      <p className="text-gray-600 mb-8">
-        Please schedule a consultation for a proper review of your case and a confidential discussion.
-        In this meeting of 30-45 minutes you get to know us through the meeting.
-      </p>
-      
+
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -189,7 +185,7 @@ const ContactForm = () => {
           >
             {isSubmitting ? 'Sending...' : 'Submit Message →'}
           </button>
-          
+
           {submitStatus === 'success' && (
             <p className="text-green-600 text-sm">Message sent successfully!</p>
           )}
