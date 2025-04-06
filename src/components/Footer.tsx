@@ -17,7 +17,7 @@ const Footer = () => {
             O: 1 (416) 977-7100<br />
             EFax: 1 (437) 222-3500<br />
             Toll Free: 1 (877) 444-3434<br />
-            Email: josephine@jbassociates.com
+            Email: josephine@baldassilaw.com
           </p>
         </div>
       </div>
