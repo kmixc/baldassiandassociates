@@ -71,7 +71,7 @@ const ContactForm = () => {
 
     try {
       const templateParams = {
-        to_email: 'oliver.kmixc@gmail.com',
+        to_email: '',
         from_name: `${formData.firstName} ${formData.lastName}`,
         from_email: formData.email,
         phone: formData.phone,
@@ -79,10 +79,10 @@ const ContactForm = () => {
       };
 
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_g37d4d3', // Replace with your EmailJS service ID
+        'template_fgfxe7q', // Replace with your EmailJS template ID
         templateParams,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'JhtpHqcfK6geERTrk' // Replace with your EmailJS public key
       );
 
       setFormData({
